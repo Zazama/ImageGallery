@@ -16,7 +16,7 @@ abstract class ImageGalleryUI {
 		$this->ImageGalleryPage = $page;
 	}
 
-	public function updateItems(DataObjectSet $items) {
+	public function updateItems(ArrayList $items) {
 		return $items;
 	}
 

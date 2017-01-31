@@ -1,5 +1,5 @@
 {
-	"name": "tractorcow/silverstripe-imagegallery",
+	"name": "Zazama/silverstripe-imagegallery",
 	"description": "Simple image gallery module for Silverstripe",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "image", "gallery"],
@@ -18,7 +18,7 @@
 		"silverstripe/framework": ">=3.1"
 	},
 	"support": {
-		"issues": "https://github.com/tractorcow/ImageGallery/issues"
+		"issues": "https://github.com/Zazama/ImageGallery/issues"
 	},
 	"extra": {
 		"installer-name": "image_gallery"

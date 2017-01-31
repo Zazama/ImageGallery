@@ -26,7 +26,7 @@ $GalleryLayout
 	<% end_if %>
 	</ul>
 </div>
-<% with GalleryItems %>
+<% with PaginatedPages %>
 	<% if MoreThanOnePage %>
 		<ul id="pagination-imagegallery">		
 			<% if NotFirstPage %>

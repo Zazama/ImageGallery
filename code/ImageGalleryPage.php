@@ -343,4 +343,10 @@ class ImageGalleryPage_Controller extends Page_Controller {
 		return array();
 	}
 
+	public function PaginatedPages() {
+		$ImagesList = new PaginatedList($this->AllGalleryItems(), $this->request);
+		$ImagesList->setPageLength(20);
+	    return $ImagesList;
+	}
+
 }
