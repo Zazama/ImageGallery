@@ -1,5 +1,5 @@
 {
-	"name": "Zazama/silverstripe-imagegallery",
+	"name": "zazama/silverstripe-imagegallery",
 	"description": "Simple image gallery module for Silverstripe",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "image", "gallery"],
