@@ -4,7 +4,7 @@
 			<% if Albums %>
 				<div id="Sidebar" class="typography">
 					<div class="sidebarBox">
-						<h3><% sprintf(_t('ALBUMSINGALLERY','Albums in %s'),$Title) %></h3>
+						<h3><% sprintf(_t('ALBUMSINGALLERY','Alben in %s'),$Title) %></h3>
 						<ul id="Menu2">
 						<% loop Albums %>
 							<li class="$LinkingMode"><a class="$LinkingMode" href="$Link" title="$AlbumName">$AlbumName</a></li>

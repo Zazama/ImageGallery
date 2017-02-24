@@ -1,0 +1,47 @@
+nl:
+  ImageGalleryAlbum:
+    ALBUMNAME: Album Naam
+    ALBUMTITLE: Album Titel
+    COVERIMAGE: Omslag Foto
+    DESCRIPTION: Omschrijving
+  ImageGalleryItem:
+    ALBUM: Album
+    CAPTION: Titel
+  ImageGalleryManager:
+    CHOOSEALBUM: Kies een album
+    DATAOBJECTMANAGER: ImageGallery vereist de DataObjectManager module.
+    ERROR: Fout
+    ROTATECLOCKWISE: Roteer met de klok mee
+    ROTATECOUNTERCLOCKWISE: Roteer tegen de klok ik
+    ROTATING: Roteren
+    UPLOADFROMPC: Uploaden van mijn computer
+    UPLOADIMAGES: Upload foto's
+    UPLOADIMAGESTO: Upload foto's naar "%s"
+  ImageGalleryPage:
+    ALBUM: Album
+    ALBUMCOVERIMAGES: Album omslag foto's
+    ALBUMS: Albums
+    ALBUMSNOTSAVED: U kunt albums toevoegen aan uw gallerij na dat u de pagina voorde eerste keer heeft opgeslagen.
+    ANALBUM: een Album
+    CONFIGURATION: Configuratie
+    IMAGES: Foto's
+    IMAGESPERPAGE: Aantal foto's per pagina
+    MAXFILES: Maxinmaal aantal bestanden toegestaan in upload wachtrij
+    NOALBUMS: U heeft geen albums. Klik op het Albums tab om minimaal een album tecre�ren alvorens foto's toe te kunnen voegen.
+    NORMALSIZE: Normale grootte (pixels)
+    PHOTOS: Foto's
+    PHOTOSNOTSAVED: U kunt foto's toevoegen aan uw gallerij na dat u de pagina voor de eerste keer heeft opgeslagen.
+    POPUPSTYLE: Popup style
+    THUMBNAILSIZE: Thumbnail grootte (pixels)
+    TO: to
+  ImageGalleryPage.ss:
+    ALBUMSINGALLERY: Albums in %s
+  ImageGalleryPage_album.ss:
+    GOTOALBUM: Ga naar het %s album
+    NEXT: Volgende
+    NEXTALBUM: Volgende Album
+    PREVIOUS: Vorige
+    PREVIOUSALBUM: Vorige Album
+    VIEWNEXTPAGE: Bekijk de volgende pagina
+    VIEWPAGENUMBER: Bekijk pagina nummer %s
+    VIEWPREVIOUSPAGE: Berkijk de vorige pagina

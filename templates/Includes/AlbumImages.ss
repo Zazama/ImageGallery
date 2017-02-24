@@ -5,9 +5,9 @@ $GalleryLayout
 	<% if PrevAlbum %>
 		<% with PrevAlbum %>
 			<li class="prev">
-				<div class="album-nav-img"><a href="$Link" title="<% sprintf(_t('GOTOALBUM','Go to the %s album'),$AlbumName) %>">$CoverImage.SetWidth(50)</a></div>
+				<div class="album-nav-img"><a href="$Link" title="<% sprintf(_t('GOTOALBUM','Gehe zum %s Album'),$AlbumName) %>">$CoverImage.SetWidth(50)</a></div>
 				<div class="album-nav-desc">
-					<h4><% _t('PREVIOUSALBUM','Previous Album') %>:</h4>							
+					<h4><% _t('PREVIOUSALBUM','Vorheriges Album') %>:</h4>							
 					<h5><a href="$Link">$AlbumName</a></h5>
 				</div>
 			</li>
@@ -16,9 +16,9 @@ $GalleryLayout
 	<% if NextAlbum %>
 		<% with NextAlbum %>
 			<li class="next">
-				<div class="album-nav-img"><a href="$Link" title="<% sprintf(_t('GOTOALBUM','Go to the %s album'),$AlbumName) %>">$CoverImage.SetWidth(50)</a></div>
+				<div class="album-nav-img"><a href="$Link" title="<% sprintf(_t('GOTOALBUM','Gehe zum %s Album'),$AlbumName) %>">$CoverImage.SetWidth(50)</a></div>
 				<div class="album-nav-desc">
-					<h4><% _t('NEXTALBUM','Next Album') %>:</h4>
+					<h4><% _t('NEXTALBUM','Nächstes Album') %>:</h4>
 					<h5><a href="$Link">$AlbumName</a></h5>
 				</div>
 			</li>
@@ -30,23 +30,23 @@ $GalleryLayout
 	<% if MoreThanOnePage %>
 		<ul id="pagination-imagegallery">		
 			<% if NotFirstPage %>
-				<li class="previous"><a title="<% _t('VIEWPREVIOUSPAGE','View the previous page') %>" href="$PrevLink">&laquo;<% _t('PREVIOUS','Previous') %></a></li>
+				<li class="previous"><a title="<% _t('VIEWPREVIOUSPAGE','Zurück zur letzten Seite') %>" href="$PrevLink">&laquo;<% _t('PREVIOUS','Zurück') %></a></li>
 			<% else %>	
-				<li class="previous-off">&laquo;<% _t('PREVIOUS','Previous') %></li>
+				<li class="previous-off">&laquo;<% _t('PREVIOUS','Zurück') %></li>
 			<% end_if %>
 
 			<% loop Pages %>
 				<% if CurrentBool %>
 					<li class="active">$PageNum</li>
 				<% else %>
-					<li><a href="$Link" title="<% sprintf(_t('VIEWPAGENUMBER','View page number %s'),$PageNum) %>">$PageNum</a></li>				
+					<li><a href="$Link" title="<% sprintf(_t('VIEWPAGENUMBER','Gehe zu Seite %s'),$PageNum) %>">$PageNum</a></li>				
 				<% end_if %>
 			<% end_loop %>
 
 			<% if NotLastPage %>
-				<li class="next"><a title="<% _t('VIEWNEXTPAGE', 'View the next page') %>" href="$NextLink"><% _t('NEXT','Next') %> &raquo;</a></li>
+				<li class="next"><a title="<% _t('VIEWNEXTPAGE', 'Gehe zur nächsten Seite') %>" href="$NextLink"><% _t('NEXT','Nächste') %> &raquo;</a></li>
 			<% else %>
-				<li class="next-off"><% _t('NEXT','Next') %> &raquo;</li>				
+				<li class="next-off"><% _t('NEXT','Nächste') %> &raquo;</li>				
 			<% end_if %>
 		</ul> 		
 	<% end_if %>
