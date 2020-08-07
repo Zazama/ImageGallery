@@ -11,7 +11,6 @@
 #pagination-imagegallery a:hover{border:solid 1px #0e509e;}
 .gallery-layout{background:url('../images/ajax-loader-lg.gif') center no-repeat;zoom:1;}.gallery-layout:after{content:".";display:block;visibility:hidden;height:0;clear:both;}
 .gallery-layout.loaded{background:none;}.gallery-layout.loaded li a{visibility:visible;}
-.gallery-layout li a{visibility:hidden;}
 .album-nav{overflow:hidden;border:1px solid #aaa;border-width:1px 0;padding:5px 0;margin:10px 0;}.album-nav ul{margin:0;padding:0;}.album-nav ul li{width:48%;margin:0;padding:1%;list-style:none;}.album-nav ul li.next{float:right;}
 .album-nav ul li.prev{float:left;}
 .album-nav ul li:hover{background:#ddd;}
