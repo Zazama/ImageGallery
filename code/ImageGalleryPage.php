@@ -1,10 +1,12 @@
 <?php
 
+Requirements::css( 'silverstripe-imagegallery/css/ImageGallery.css', 'screen,projection' ); 
+
 class ImageGalleryPage extends Page {
 	
 	protected $currentAlbum = null;
 	
-	private static $icon = 'image_gallery/images/image-gallery-icon.png';
+	private static $icon = 'silverstripe-imagegallery/images/image-gallery-icon.png';
 
 	private static $db = array(
 		'GalleryUI' => "Varchar(50)",
@@ -205,8 +207,8 @@ class ImageGalleryPage extends Page {
 
 	public function includeUI() {
 		if (($ui = $this->GalleryUI()) && ClassInfo::exists($ui)) {
-			Requirements::javascript("image_gallery/javascript/imagegallery_init.js");
-			$this->UI = Object::create($ui);
+			Requirements::javascript("silverstripe-imagegallery/javascript/imagegallery_init.js");
+			$this->UI = SS_Object::create($ui);
 			$this->UI->setImageGalleryPage($this);
 			$this->UI->initialize();
 		}

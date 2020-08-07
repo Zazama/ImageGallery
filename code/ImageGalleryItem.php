@@ -13,38 +13,28 @@ class ImageGalleryItem extends DataObject {
 	 * @config
 	 * @var string
 	 */
-	private static $delete_permission = "CMS_ACCESS_CMSMain";
-	
-	public function getTitle() {
-		if($this->Caption) {
-			return $this->dbObject('Caption')->FirstSentence();
-		}
-		if($image = $this->Image()) {
-			return $image->Title;
-		}
-		return parent::getTitle();
-	}
+	public static $delete_permission = "CMS_ACCESS_CMSMain";
 
-	private static $db = array(
+	public static $db = array(
 		'Caption' => 'Text',
 		'SortOrder' => 'Int'
 	);
 
-	private static $has_one = array(
+	public static $has_one = array(
 		'ImageGalleryPage' => 'ImageGalleryPage',
 		'Album' => 'ImageGalleryAlbum',
 		'Image' => 'Image'
 	);
 
-	private static $default_sort = '"SortOrder" ASC';
+	public static $default_sort = '"SortOrder" ASC';
 	
-	private static $summary_fields = array(
+	public static $summary_fields = array(
 		'Image.CMSThumbnail' => 'Image',
 		'Caption' => 'Image Caption'
 	);
 
 	public function getCMSFields() {
-		$fields = new FieldList(new TabSet('Root'));
+		/*$fields = new FieldList(new TabSet('Root'));
 		
 		// Details
 		$fields->addFieldToTab('Root.Main', new TextareaField('Caption', _t('ImageGalleryItem.CAPTION', 'Caption')));
@@ -52,7 +42,12 @@ class ImageGalleryItem extends DataObject {
 		// Create image
 		$imageField = new UploadField('Image');
 		$imageField->getValidator()->setAllowedExtensions(File::config()->app_categories['image']);
-		$fields->addFieldToTab('Root.Main', $imageField);
+		$fields->addFieldToTab('Root.Main', $imageField);*/
+		$fields = parent::getCMSFields();
+
+		$fields->removeFieldFromTab("Root.Main","ImageGalleryPageID");
+		$fields->removeFieldFromTab("Root.Main","AlbumID");
+		$fields->removeFieldFromTab("Root.Main","SortOrder");
 
 		return $fields;
 	}
@@ -107,6 +102,16 @@ class ImageGalleryItem extends DataObject {
 
 	public function canDelete($member = null) {
 		return Permission::check(self::config()->delete_permission, 'any', $member);
+	}
+
+	public function getTitle() {
+		if($this->Caption) {
+			return $this->dbObject('Caption')->FirstSentence();
+		}
+		if($image = $this->Image()) {
+			return $image->Title;
+		}
+		return parent::getTitle();
 	}
 
 }
