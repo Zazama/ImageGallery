@@ -193,8 +193,6 @@ class ImageGalleryPage extends Page
                 _t('TractorCow\\ImageGallery\\Pages\\ImageGalleryPage.NORMALHEIGHT', 'Normal height (pixels)')),
             new NumericField('MediaPerPage',
                 _t('TractorCow\\ImageGallery\\Pages\\ImageGalleryPage.IMAGESPERPAGE', 'Number of images per page')),
-            new OptionsetField('GalleryUI',
-                _t('TractorCow\\ImageGallery\\Pages\\ImageGalleryPage.POPUPSTYLE', 'Popup style'), $popupMap),
             new NumericField('UploadLimit',
                 _t('TractorCow\\ImageGallery\\Pages\\ImageGalleryPage.MAXFILES', 'Max files allowed in upload queue'))
         ]);
@@ -279,9 +277,7 @@ class ImageGalleryPage extends Page
 
     public function GalleryUI()
     {
-        return $this->GalleryUI
-            ? $this->GalleryUI
-            : self::get_default_ui();
+        return "GLightbox";
     }
 
     public function includeUI()
