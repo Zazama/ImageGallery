@@ -23,11 +23,11 @@
 	"extra": {
 		"installer-name": "image_gallery",
 		"expose": [
-            "image_gallery/javascript",
-            "image_gallery/css",
-            "image_gallery/images",
-            "image_gallery/gallery_ui/glightbox/javascript",
-            "image_gallery/gallery_ui/glightbox/css"
+            "javascript",
+            "css",
+            "images",
+            "gallery_ui/glightbox/javascript",
+            "gallery_ui/glightbox/css"
         ]
 	},
 	"suggests": {
