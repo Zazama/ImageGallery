@@ -21,7 +21,14 @@
 		"issues": "https://github.com/tractorcow/ImageGallery/issues"
 	},
 	"extra": {
-		"installer-name": "image_gallery"
+		"installer-name": "image_gallery",
+		"expose": [
+            "image_gallery/javascript",
+            "image_gallery/css",
+            "image_gallery/images",
+            "image_gallery/gallery_ui/glightbox/javascript",
+            "image_gallery/gallery_ui/glightbox/css"
+        ]
 	},
 	"suggests": {
 		"colymba/gridfield-bulk-editing-tools": "^3.0",
