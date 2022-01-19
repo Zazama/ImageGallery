@@ -6,7 +6,7 @@ class GLightbox extends ImageGalleryUI
 {
 	public static $link_to_demo = "https://biati-digital.github.io/glightbox/#licens";
 	public static $label = "GLightbox";
-	public $item_template = "TractorCow\\ImageGallery\\Items\\Glightbox_item";
+	public $item_template = "TractorCow\\ImageGallery\\Items\\GLightbox_item";
 
 	public function initialize()
 	{
