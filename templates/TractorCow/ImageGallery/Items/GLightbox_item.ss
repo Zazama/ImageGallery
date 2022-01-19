@@ -1,3 +1,3 @@
-<a id="ViewLink-$ID" class="glightbox" data-title="$Caption.EscapeXML" href="$Large.URL">
-	<img src="$Thumbnail.URL" alt="$Title.EscapeXML"/>
+<a id="ViewLink-$ID" class="glightbox" data-title="$Caption.XML" href="$Large.URL">
+	<img src="$Thumbnail.URL" alt="$Title.XML"/>
 </a>
