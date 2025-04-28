@@ -292,6 +292,7 @@ class ImageGalleryPage extends Page
 
     protected function Items($limit = null)
     {
+        $limit = intval($limit) === 0 ? null : intval($limit);
         $items = DataObject::get($this->ItemClass)->sort('"SortOrder" ASC')->limit($limit);
         if ($album = $this->CurrentAlbum()) {
             $items = $items->filter('AlbumID', $album->ID);
